@@ -1,117 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Story Your Song</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: #ffffff;
-      text-align: center;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Story Your Song</title>
 
-    /* Premium Gradient Header */
-    header {
-      padding: 80px 20px;
-      background: linear-gradient(135deg, #ff4d6d, #6c5ce7, #00d2ff, #6c5ce7);
-      background-size: 400% 400%;
-      animation: gradientAnimation 15s ease infinite;
-      color: #fff;
-      text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
-    }
+<style>
+/* ---------------- Body & Fonts ---------------- */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  background: linear-gradient(135deg, #ff4d6d, #6c5ce7, #00d2ff, #6c5ce7);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
 
-    @keyframes gradientAnimation {
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
-    }
+/* ---------------- Background Animation ---------------- */
+@keyframes gradientAnimation {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
 
-    h1 {
-      font-size: 2.8em;
-      margin-bottom: 15px;
-    }
+/* ---------------- Header ---------------- */
+header {
+  padding: 80px 20px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
 
-    p {
-      max-width: 600px;
-      margin: 10px auto;
-      line-height: 1.6;
-    }
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 15px 35px;
-      background: #fff;
-      color: #6c5ce7;
-      font-weight: bold;
-      border-radius: 50px;
-      text-decoration: none;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
+p {
+  max-width: 650px;
+  margin: 10px auto;
+  line-height: 1.6;
+}
 
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-    }
+/* ---------------- Buttons ---------------- */
+.btn {
+  display: inline-block;
+  margin: 15px 10px 0 10px;
+  padding: 15px 35px;
+  background: #ffffff;
+  color: #6c5ce7;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
 
-    section {
-      padding: 50px 20px;
-    }
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
 
-    .features, .steps {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
+/* ---------------- Sections ---------------- */
+section {
+  padding: 60px 20px;
+}
 
-    .card {
-      background: #1c1c1c;
-      border-radius: 20px;
-      padding: 25px;
-      width: 250px;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    }
+.features, .steps, .order-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 
-    audio {
-      margin-top: 20px;
-      border-radius: 10px;
-      outline: none;
-    }
+/* ---------------- Cards ---------------- */
+.card {
+  background: rgba(0,0,0,0.6);
+  border-radius: 20px;
+  padding: 25px;
+  width: 280px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
 
-    footer {
-      padding: 20px;
-      font-size: 0.9em;
-      opacity: 0.7;
-    }
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
 
-    form {
-      margin-top: 15px;
-    }
-  </style>
+/* ---------------- Audio Player ---------------- */
+audio {
+  margin-top: 20px;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+  padding: 25px;
+  font-size: 0.9em;
+  opacity: 0.7;
+}
+</style>
 </head>
 <body>
 
+<!-- ---------------- Header ---------------- -->
 <header>
   <h1>🎶 Your Story. Your Song.</h1>
   <p>Turn your memories into a one-of-a-kind personalized song</p>
   <a href="#order" class="btn">Create My Song</a>
 </header>
 
+<!-- ---------------- Perfect Gift ---------------- -->
 <section>
   <h2>💝 The Perfect Gift</h2>
-  <p>A unique, emotional, and unforgettable gift for someone special.</p>
-  <p>Perfect for birthdays, anniversaries, weddings, or just because ❤️</p>
+  <p>A unique, emotional, and unforgettable gift for someone special. Perfect for birthdays, anniversaries, weddings, or just because ❤️</p>
 </section>
 
+<!-- ---------------- Features ---------------- -->
 <section>
   <h2>✨ What You Get</h2>
   <div class="features">
@@ -122,29 +131,39 @@
   </div>
 </section>
 
+<!-- ---------------- How It Works ---------------- -->
 <section>
   <h2>🛠 How It Works</h2>
   <div class="steps">
     <div class="card">1. Send your story & details</div>
     <div class="card">2. Choose your music style</div>
-    <div class="card">3. I create your song</div>
-    <div class="card">4. Receive it within 2–3 days 🎧</div>
+    <div class="card">3. Receive your song 🎧</div>
   </div>
 </section>
 
-<section>
-  <h2>💡 Why You'll Love It</h2>
-  <p>• Deeply personal & emotional</p>
-  <p>• A gift they’ll NEVER expect</p>
-  <p>• Creates lasting memories</p>
-</section>
-
+<!-- ---------------- Order Steps ---------------- -->
 <section id="order">
-  <h2>🎁 Order Your Custom Song</h2>
-  <p>Email me your story and I’ll turn it into music 🎶</p>
+  <h2>🚀 Get Your Song in 3 Easy Steps</h2>
+  <div class="order-steps">
+    <div class="card">
+      <h3>Step 1: Who’s It For?</h3>
+      <p>💌 Tell us the name(s), memories, inside jokes, or special moments you want in the song.</p>
+    </div>
+    <div class="card">
+      <h3>Step 2: Choose Your Vibe</h3>
+      <p>🎸 What genre should it be? Pick one (or mix!):</p>
+      <p>Pop, Rock, Jazz, Country, Indie, Hip Hop, Reggae, Folk, Boy Band</p>
+    </div>
+    <div class="card">
+      <h3>Step 3: Pick the Voice</h3>
+      <p>🎤 Who’s singing?</p>
+      <p>Adult Male, Adult Female, Young Girl, Young Boy, Group / Choir</p>
+    </div>
+  </div>
   <a href="mailto:yourstoryyoursongforyou@gmail.com" class="btn">Order via Email</a>
 </section>
 
+<!-- ---------------- Song Preview & Payment ---------------- -->
 <section>
   <h2>🎵 Preview & Purchase</h2>
   <audio controls>
@@ -167,6 +186,7 @@
   <p>Or send an E-transfer to <strong>yourstoryyoursongforyou@gmail.com</strong> with your story</p>
 </section>
 
+<!-- ---------------- Footer ---------------- -->
 <footer>
   <p>Digital product only — no physical item will be shipped</p>
 </footer>
